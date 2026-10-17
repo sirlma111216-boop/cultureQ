@@ -24,6 +24,16 @@ npm run check:content  # 0~13단계·프롬프트 01~09·금지 문구·키 노�
 3. Build command `npm run build`, Build output directory `dist`, 환경변수 없음.
 4. 발급된 `https://…pages.dev` 주소를 참가자에게 전달합니다. 수정 후 Push하면 같은 주소로 자동 재배포됩니다.
 
+### 현재 배포 상태
+
+- 공개 주소: https://cultureq.pages.dev (Cloudflare Pages 프로젝트 `cultureq`, Wrangler 직접 업로드 방식)
+- 이 프로젝트는 Git 연결이 아니라서 **GitHub에 Push해도 자동 배포되지 않습니다.** 수정 후 아래 명령으로 다시 배포합니다.
+
+```bash
+npm run build
+npx wrangler pages deploy dist --project-name cultureq --branch main
+```
+
 ## 구조
 
 ```
