@@ -1,0 +1,24 @@
+{
+  "name": "school-culture-curator-workshop-guide",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "창체·동아리 문화활동 큐레이터 만들기 — 단계별 연수 강의안 (정적 사이트)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "check:content": "node scripts/check-content.mjs"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}
