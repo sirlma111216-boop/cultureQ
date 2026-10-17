@@ -26,13 +26,9 @@ npm run check:content  # 0~13단계·프롬프트 01~09·금지 문구·키 노�
 
 ### 현재 배포 상태
 
-- 공개 주소: https://cultureq.pages.dev (Cloudflare Pages 프로젝트 `cultureq`, Wrangler 직접 업로드 방식)
-- 이 프로젝트는 Git 연결이 아니라서 **GitHub에 Push해도 자동 배포되지 않습니다.** 수정 후 아래 명령으로 다시 배포합니다.
-
-```bash
-npm run build
-npx wrangler pages deploy dist --project-name cultureq --branch main
-```
+- 공개 주소: https://cultureq.pages.dev (Cloudflare Pages 프로젝트 `cultureq`)
+- GitHub 저장소 `sirlma111216-boop/cultureQ`의 `main` 브랜치와 연결되어 있습니다. **Push하면 Cloudflare가 자동으로 빌드·배포합니다.**
+- 배포 기록은 Cloudflare 대시보드 → Workers & Pages → cultureq → Deployments에서 커밋별로 확인합니다.
 
 ## 구조
 
